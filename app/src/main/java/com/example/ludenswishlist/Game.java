@@ -1,6 +1,7 @@
 package com.example.ludenswishlist;
 
 public class Game {
+    //This is the Game class by Manjun
     public int gameId;
     public String gameName;
     public String genre;
