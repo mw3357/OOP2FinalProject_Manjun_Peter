@@ -3,6 +3,7 @@ package com.example.ludenswishlist;
 public class Game {
     //This is the Game class by Manjun
     public int gameId;
+    public int gameId2;
     public String gameName;
     public String genre;
     public String platform;
@@ -10,14 +11,19 @@ public class Game {
     public String releaseDate;
     public boolean wantToPlay;
     public String shareDate;
+    public String bio;
+    public String newsLink;
 
-    public Game(String gameName, String genre, String platform, String studio, String releaseDate, int gameId) {
+    public Game(String gameName, String genre, String platform, String studio, String releaseDate, int gameId, int gameId2, String bio, String newsLink) {
         this.gameName = gameName;
         this.genre = genre;
         this.platform = platform;
         this.studio = studio;
         this.releaseDate = releaseDate;
         this.gameId = gameId;
+        this.gameId2 = gameId2;
+        this.bio = bio;
+        this.newsLink = newsLink;
     }
 
     public Game(int gameId, String gameName, String genre, String platform, String studio, String releaseDate, boolean wantToPlay, String shareDate) {
