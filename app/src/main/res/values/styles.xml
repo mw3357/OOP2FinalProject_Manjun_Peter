@@ -6,6 +6,8 @@
         <item name="colorPrimary">#000000</item>
         <item name="colorPrimaryDark">#eeba30</item>
         <item name="colorAccent">@color/customizelight</item>
+        <!--<item name="android:fontFamily">@font/bangersregular</item> -->
     </style>
+
 
 </resources>

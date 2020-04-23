@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //setTitle("");
+        setTitle("Luden's Wishlist - HOME");
         getIntent();
 
         initialData();
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this,"This is the homepage", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.Wishlist:
-                Intent i = new Intent(this, WishListActivity.class);
+                Intent i = new Intent(this, WishList_Activity.class);
                 startActivity(i);
                 return true;
             case R.id.News:
