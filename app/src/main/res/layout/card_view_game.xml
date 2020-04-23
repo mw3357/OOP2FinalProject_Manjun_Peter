@@ -7,6 +7,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp">
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/game_image_view"
+            android:backgroundTint="#F0B706"
+            android:text="Share" />
         <ImageView
             android:id="@+id/game_image_view"
             android:layout_width="100dp"
@@ -55,6 +62,17 @@
             android:layout_toRightOf="@+id/game_image_view"
             android:text="THQ Nordic"
             />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/game_studio_view"
+            android:layout_marginLeft="70dp"
+            android:layout_toRightOf="@id/game_releaseDate_view"
+            android:backgroundTint="#FFC107"
+            android:alpha="0.7"
+
+            android:text="share" />
 
     </RelativeLayout>
 
