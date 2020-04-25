@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,7 +38,11 @@ public class WishList_Activity extends AppCompatActivity {
 
     private void initialData() {
         games = new ArrayList<>();
-       // games.add(new Game("Darksiders: Genesis", "Action", "PS4, XB1, PC", "THQ Nordic", "2.14.2020", "aaa", R.drawable.ic_class_black_24dp));
+
+        Intent receivingIntent = getIntent();
+        Game g = (Game)receivingIntent.getSerializableExtra(Keys.GAME_TOWISHLIST);
+
+        games.add(new Game(g.getGameId(),g.getGameName(),g.getGenre(),g.getPlatform(),g.getStudio(),g.getReleaseDate()));
     }
 
 

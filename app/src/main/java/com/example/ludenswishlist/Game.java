@@ -1,6 +1,8 @@
 package com.example.ludenswishlist;
 
-public class Game {
+import java.io.Serializable;
+
+public class Game implements Serializable {
     //This is the Game class by Manjun
     public int gameId;
     public int gameId2;
@@ -12,6 +14,22 @@ public class Game {
     public boolean wantToPlay;
     public String shareDate;
     public String bio;
+
+    public Game(int gameId2, String gameName, String genre, String platform, String studio, String releaseDate) {
+        this.gameId2 = gameId2;
+        this.gameName = gameName;
+        this.genre = genre;
+        this.platform = platform;
+        this.studio = studio;
+        this.releaseDate = releaseDate;
+    }
+
+    public Game(String gameName, String releaseDate, String platform) {
+        this.gameName = gameName;
+        this.releaseDate = releaseDate;
+        this.platform = platform;
+    }
+
     public String newsLink;
 
     public Game(String gameName, String genre, String platform, String studio, String releaseDate, int gameId, int gameId2, String bio, String newsLink) {

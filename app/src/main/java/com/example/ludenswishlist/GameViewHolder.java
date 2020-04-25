@@ -1,7 +1,6 @@
 package com.example.ludenswishlist;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.View;
 
 import android.widget.Button;
@@ -21,7 +20,7 @@ public class GameViewHolder extends RecyclerView.ViewHolder {
     public TextView gameReleaseDate;
     public TextView gameStudio;
     public ImageView gamePhoto;
-    public Button shareButton;
+
 
     public GameViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -36,9 +35,9 @@ public class GameViewHolder extends RecyclerView.ViewHolder {
         gameReleaseDate = (TextView) itemView.findViewById(R.id.game_releaseDate_view);
         gameStudio = (TextView) itemView.findViewById(R.id.game_studio_view);
         gamePhoto = (ImageView) itemView.findViewById(R.id.game_image_view);
-        shareButton = (Button) itemView.findViewById(R.id.share_button);
 
-        shareButton.setOnClickListener(new );
+
+        //shareButton.setOnClickListener(new );
 
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override

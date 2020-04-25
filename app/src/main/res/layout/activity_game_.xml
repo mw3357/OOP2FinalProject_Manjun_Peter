@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:alpha = "0.9"
+    android:background="#000000"
     tools:context=".Game_Activity">
 
     <ImageView
@@ -12,14 +14,35 @@
         android:layout_height="200dp"
         android:scaleType="fitStart"
         android:src="@drawable/darksiders2" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/gameTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
+        android:gravity=""
         android:text="Title"
+        android:textColor = "	#ece0d1"
         android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/share_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="85sp"
+            android:layout_marginLeft="174dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="80sp"
+            android:layout_marginRight="-11dp"
+            android:layout_toRightOf="@+id/gameTitle"
+            android:backgroundTint="#FFC107"
+            android:text="Share"
+            android:onClick="toSharePage"/>
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -33,8 +56,11 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:text="PS4"
+            android:textColor = "	#ece0d1"
             android:textSize="20sp" />
     </LinearLayout>
+
+
 
     <TextView
         android:id="@+id/gameReleaseDate"
@@ -42,6 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:text="03.01.2020"
+        android:textColor = "	#ece0d1"
         android:textSize="20sp" />
 
     <RelativeLayout
@@ -56,6 +83,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16sp"
             android:text="Introduction:"
+            android:textColor = "	#ece0d1"
             android:textSize="20sp" />
 
         <Button
@@ -63,8 +91,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="50sp"
-            android:text="Add to Wishlist" />
+            android:layout_marginRight="75dp"
+            android:backgroundTint="#FFC107"
+            android:text="Add to Wishlist"
+            android:onClick="toWishList"/>
 
     </RelativeLayout>
 
@@ -74,6 +104,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16sp"
         android:layout_marginTop="16sp"
+        android:textColor = "	#ece0d1"
         android:justificationMode="inter_word"
         android:text="DARKSIDERS: GENESIS is an action/adventure game "
         android:textSize="20sp" />
