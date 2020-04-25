@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp">
-        <Button
+       <Button
             android:id="@+id/next_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,12 +67,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@id/game_studio_view"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="15dp"
             android:layout_toRightOf="@id/game_releaseDate_view"
             android:backgroundTint="#FFC107"
             android:alpha="0.7"
-
-            android:text="share" />
+            android:text="Detail" />
 
     </RelativeLayout>
 

@@ -1,6 +1,7 @@
 package com.example.ludenswishlist;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -38,6 +39,7 @@ public class GameViewHolder extends RecyclerView.ViewHolder {
             @Override
             public void onClick(View v) {
                 Toast.makeText(context, gameName.getText(), Toast.LENGTH_SHORT).show();
+                //Intent viewDetail = new Intent(MainActivity.this, Game_Activity.class);
             }
         });
 
