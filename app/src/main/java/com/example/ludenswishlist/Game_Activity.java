@@ -54,7 +54,10 @@ public class Game_Activity extends AppCompatActivity {
         gameStudio = (TextView) findViewById(R.id.game_studio_view);
         String gameS = gameStudio.getText().toString();
         gamePhoto = (ImageView) findViewById(R.id.game_image_view);
-        int id = Integer.parseInt(gamePhoto.toString());
+
+        gamePhoto.setImageDrawable(getDrawable(R.drawable.animalcrossing1));
+        gamePhoto.setTag(R.drawable.animalcrossing1);
+        int id = Integer.parseInt(gamePhoto.getTag().toString());
 
         gameName = findViewById(R.id.gameTitle);
         String gameN = gameName.getText().toString();

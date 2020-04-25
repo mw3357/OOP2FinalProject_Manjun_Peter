@@ -39,10 +39,10 @@ public class WishList_Activity extends AppCompatActivity {
     private void initialData() {
         games = new ArrayList<>();
 
-        Intent receivingIntent = getIntent();
-        Game g = (Game)receivingIntent.getSerializableExtra(Keys.GAME_TOWISHLIST);
+        //Intent receivingIntent = getIntent();
+        //Game g = (Game)receivingIntent.getSerializableExtra(Keys.GAME_TOWISHLIST);
 
-        games.add(new Game(g.getGameId(),g.getGameName(),g.getGenre(),g.getPlatform(),g.getStudio(),g.getReleaseDate()));
+        //games.add(new Game(g.getGameId(),g.getGameName(),g.getGenre(),g.getPlatform(),g.getStudio(),g.getReleaseDate()));
     }
 
 
