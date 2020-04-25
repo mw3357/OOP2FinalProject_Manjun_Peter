@@ -3,6 +3,8 @@ package com.example.ludenswishlist;
 import android.content.Context;
 import android.content.Intent;
 import android.view.View;
+
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,6 +21,7 @@ public class GameViewHolder extends RecyclerView.ViewHolder {
     public TextView gameReleaseDate;
     public TextView gameStudio;
     public ImageView gamePhoto;
+    public Button shareButton;
 
     public GameViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -33,13 +36,18 @@ public class GameViewHolder extends RecyclerView.ViewHolder {
         gameReleaseDate = (TextView) itemView.findViewById(R.id.game_releaseDate_view);
         gameStudio = (TextView) itemView.findViewById(R.id.game_studio_view);
         gamePhoto = (ImageView) itemView.findViewById(R.id.game_image_view);
+        shareButton = (Button) itemView.findViewById(R.id.share_button);
 
 
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(context, gameName.getText(), Toast.LENGTH_SHORT).show();
-                //Intent viewDetail = new Intent(MainActivity.this, Game_Activity.class);
+//                Intent intent = new Intent(this, Game_Activity.class);
+//                String user_name = "Jhon Doe";
+//                intent.putExtra("USER_NAME", user_name);
+
+
             }
         });
 

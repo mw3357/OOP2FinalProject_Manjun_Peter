@@ -9,9 +9,11 @@ import android.view.ViewGroup;
 import androidx.recyclerview.widget.RecyclerView.Adapter;
 import java.util.List;
 
+
 public class GamesAdapter extends Adapter<GameViewHolder> {
     private List<Game> games;
     private Context context;
+
 
     public GamesAdapter(List<Game> games, Context context) {
         this.games = games;
