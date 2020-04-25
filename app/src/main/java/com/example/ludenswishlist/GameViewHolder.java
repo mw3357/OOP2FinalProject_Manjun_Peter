@@ -38,6 +38,7 @@ public class GameViewHolder extends RecyclerView.ViewHolder {
         gamePhoto = (ImageView) itemView.findViewById(R.id.game_image_view);
         shareButton = (Button) itemView.findViewById(R.id.share_button);
 
+        shareButton.setOnClickListener(new );
 
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
