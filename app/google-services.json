@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "219493852078",
+    "firebase_url": "https://ludens-wishlist-2.firebaseio.com",
+    "project_id": "ludens-wishlist-2",
+    "storage_bucket": "ludens-wishlist-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219493852078:android:d495e54613f36043ba5e3f",
+        "android_client_info": {
+          "package_name": "com.example.ludenswishlist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219493852078-0cc86396104udlpd9hchja2n9e1r4i68.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ludenswishlist",
+            "certificate_hash": "bf6187a9023dfc2a5f87817ba372e552b4daaa2a"
+          }
+        },
+        {
+          "client_id": "219493852078-f7rg920r68tpd6tpj2lbhetdk1rat6pu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcI7YLXvyc4HrOxknP65tXOBCKDdAt8zY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219493852078-f7rg920r68tpd6tpj2lbhetdk1rat6pu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
